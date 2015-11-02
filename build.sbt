@@ -8,5 +8,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.3.11",
   "com.typesafe.akka" %% "akka-testkit" % "2.3.11" % "test",
   "org.scalatest" %% "scalatest" % "2.2.4" % "test",
-  "com.typesafe.play" %% "play-json" % "2.3.4"
+  "com.typesafe.play" %% "play-json" % "2.3.4",
+  "com.thenewmotion.akka" %% "akka-rabbitmq" % "1.2.4"
 )
+
+resolvers += "The New Motion Public Repo" at "http://nexus.thenewmotion.com/content/groups/public/"

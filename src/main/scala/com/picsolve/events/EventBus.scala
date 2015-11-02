@@ -22,7 +22,13 @@ case object Event extends Event {
 }
 
 case class AssociationEvent(message: String) extends Event
+object AssociationEvent{
+  implicit val format = Json.format[AssociationEvent]
+}
 case class AddPassEvent(message: String) extends Event
+object AddPassEvent{
+  implicit val format = Json.format[AddPassEvent]
+}
 
 
 class EventBus extends ActorEventBus with SubchannelClassification {
